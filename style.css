@@ -1,0 +1,375 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con{
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+nav{
+    background-color: rgb(241, 241, 242);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+}
+
+.nav-wrapper .logo h3 a{
+    color: #11007e;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logom{
+    /* border: 1px solid red; */
+    display: flex;
+}
+
+.crat{
+    /* position: absolute; */
+    top: 4px;
+    left: 15px;
+    width: 25px;
+    height: 25px;
+    background-color: #11007e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.nav-wrapper .input{
+    display: flex;
+    list-style: none;
+}
+
+.input{
+    align-items: center;
+}
+
+.input .text input{
+    width: 500px;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 0.1rem;
+    margin-left: 1.2rem;
+}
+
+.input .submit button{
+    border: none;
+    background-color: rgb(36, 5, 175);
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+}
+
+.input .submit button:hover{
+    background-color: #11007e;
+    cursor: pointer;
+}
+
+.nav-wrapper .menu{
+    display: flex;
+    list-style: none;
+    margin-right: 1.5rem;
+}
+
+.menu li a{
+    margin-left: 1.2rem;
+    text-decoration: none;
+    color: #11007e;
+}
+
+.profine h3 a{
+    text-decoration: none;
+    color: #11007e;
+}
+
+.profine{
+    margin-right: 1.5rem;
+}
+
+.profine h3 a{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 857px){
+
+    .nav-wrapper{
+        padding: 0 1rem;
+    }
+
+    .input .text input{
+        width: 350px;
+        padding: 8px;
+        border: none;
+        border-radius: 10px;
+        margin-right: 0.1rem;
+        margin-left: 1.2rem;
+    }
+
+    /* .crat{
+    position: absolute;
+    top: 4px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: #11007e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+} */
+}
+
+@media only screen and (max-width: 768px){
+    .input .text input{
+        width: 200px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 0.1rem;
+        margin-left: 1.2rem;
+    }
+
+    /* .crat{
+    position: absolute;
+    top: 4px;
+    left: 30px;
+    width: 25px;
+    height: 25px;
+    background-color: #11007e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+} */
+
+}
+
+@media only screen and (max-width: 613px){
+    .input .text input{
+        width: 150px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        margin-right: 0.1rem;
+        margin-left: 1.2rem;
+    }   
+
+    .input .submit button{
+        border: none;
+        background-color: rgb(36, 5, 175);
+        padding: 5px;
+        color: white;
+        border-radius: 5px;
+    }
+
+}
+
+@media only screen and (max-width: 540px){
+    .menu li{
+        display: none;
+    }
+
+    /* .crat{
+    position: absolute;
+    top: 4px;
+    left: 20px;
+    width: 25px;
+    height: 25px;
+    background-color: #11007e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+} */
+}
+
+.slideshow{
+    max-width: 1500px;
+    position: relative;
+    margin: 3rem auto;
+}
+
+.myslide img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.myslide{
+    display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+@media only screen and (max-width: 537px){
+    .slideshow{
+        max-width: 500px;
+        position: relative;
+        margin: 3rem auto;
+    }
+
+    .myslide img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+}
+
+.main{
+    text-align: center;
+    color: #11007e;
+}
+
+.menu2{
+    max-width: 1500%;
+    margin: 0 auto;;
+}
+
+.menucon2{
+    padding: 40px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+.menucon2 li{
+    margin: 0 auto;
+}
+
+.menucon2 li a{
+    text-decoration: none;
+    color: #000;
+}
+.menucon2 li a img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.next1{
+    text-align: center;
+}
+
+.next1 button{
+    padding: 10px 20px;
+    border: none;
+}
+
+.next1 button:hover{
+    background-color: rgb(181, 181, 181);
+    cursor: pointer;
+}
+
+h2{
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #11007e;
+}
+
+.backcolor{
+    background-color: #11007e;
+}
+
+.prodec{ 
+    width: 100%;
+    padding: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 20px;
+}
+
+.prodect-item{
+    background-color: rgb(203, 211, 219);
+    cursor: pointer;
+}
+
+.prodect-item:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+}
+
+.prodect-item img{
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+}
+
+.prodect-item p{
+    margin-left: 0.5rem;
+    font-size: 1.2vw;
+}
+
+.prodect-item a{
+    text-decoration: none;
+    color: #000;
+}
+
+@media only screen and (max-width: 537px){
+    .backcolor{
+        width: 100%;
+    }
+    .prodec{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 10px;
+    }
+
+    .prodect-item img{
+    width: 100%;
+    height: 40vw;
+    object-fit: cover;
+    } 
+
+    .prodect-item{
+    height: 200px;
+    background-color: rgb(203, 211, 219);
+    }
+
+    .prodect-item p{
+        font-size: 2vw;
+    }
+}
+
